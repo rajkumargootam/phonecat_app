@@ -1,0 +1,17 @@
+{
+  "name": "phonecat_app",
+  "description": "mobiles details in phonecat_app",
+  "main": "index.js",
+  "authors": [
+    "rajkumar gootam"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

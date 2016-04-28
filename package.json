@@ -1,0 +1,19 @@
+{
+  "name": "phonecat_app",
+  "version": "1.0.0",
+  "description": "mobiles details in phonecat_app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rajkumargootam/phonecat_app.git"
+  },
+  "author": "rajkumar gootam",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rajkumargootam/phonecat_app/issues"
+  },
+  "homepage": "https://github.com/rajkumargootam/phonecat_app#readme"
+}
