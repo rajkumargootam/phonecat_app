@@ -1,37 +1,26 @@
-<html ng-app="phonecatApp">
+<html lang="en" ng-app>
   <head>
-    ...
-    <script src="bower_components/angular/angular.js"></script>
-    <script src="js/controllers.js"></script>
+    <meta charset="utf-8">
+    <title>My HTML File</title>
+    <title>Google Phone Gallery</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/app.css">
+    <script type="https://code.angularjs.org/1.2.0-rc.2/angular.min.js">
+
+    </script>
   </head>
- <body ng-controller="PhoneListCtrl">
-
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-md-2">
-          <!--Sidebar content-->
-
-          Search: <input ng-model="query">
-          Sort by:
-          <select ng-model="orderProp">
-            <option value="name">Alphabetical</option>
-            <option value="age">Newest</option>
-          </select>
-
-
-        </div>
-        <div class="col-md-10">
-          <!--Body content-->
-
-          <ul class="phones">
-            <li ng-repeat="phone in phones | filter:query">
-              {{phone.name}}
-              <p>{{phone.snippet}}</p>
-            </li>
-          </ul>
-
-        </div>
-      </div>
-    </div>
- </body>
+  <body>
+    <ul>
+      <li>
+        <span>Nexus S</span>
+        <p>
+          Fast just got faster with Nexus S.
+        </p>
+      </li>
+      <li>
+        <span>Motorola XOOM™ with Wi-Fi</span>
+        <p>The Next, Next Generation tablet.</p>
+      </li>
+    </ul>
+  </body>
 </html>
