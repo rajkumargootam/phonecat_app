@@ -1,25 +1,21 @@
-<html lang="en" ng-app>
+<html lang="en" ng-app="phonecatApp">
   <head>
     <meta charset="utf-8">
     <title>My HTML File</title>
     <title>Google Phone Gallery</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <link rel="stylesheet" href="css/app.css">
-    <script type="https://code.angularjs.org/1.2.0-rc.2/angular.min.js">
-
-    </script>
+    <script src="https://code.angularjs.org/1.2.0-rc.2/angular.js"></script>
+    <script src="https://code.angularjs.org/1.2.0-rc.2/angular.min.js"></script>
+    <script src="js/controllers.js"></script>
+    <script src="js/filters.js"></script>
+    <script src="js/services.js"></script>
   </head>
-  <body>
+  <body ng-controller="PhoneListCtrl">
     <ul>
-      <li>
-        <span>Nexus S</span>
-        <p>
-          Fast just got faster with Nexus S.
-        </p>
-      </li>
-      <li>
-        <span>Motorola XOOM™ with Wi-Fi</span>
-        <p>The Next, Next Generation tablet.</p>
+      <li ng-repeat="phone in phones">
+        <span>{{phone.name}}</span>
+        <p>{{phone.snippet}}</p>
       </li>
     </ul>
   </body>
